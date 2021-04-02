@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Dancing+Script:wght@400;500;600;700&display=swap");
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.s1 {
+  background-image: url("/assets/images/bg-section1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  position: relative;
+  /* needed for footer positioning*/
+  height: auto !important;
+  /* real browsers */
+  min-height: 100%;
+  /* real browsers */
+}
+.s1 .flower-left {
+  position: absolute;
+  top: 20%;
+  left: -60px;
+  width: 200px;
+}
+.s1 .flower-right {
+  position: absolute;
+  top: 60%;
+  right: -30px;
+  width: 200px;
+}
+
+.s2 {
+  background-image: url("/assets/images/bg-section2.svg");
+  background-size: cover;
+  background-repeat: repeat-y;
+  background-position: center;
+  width: 100%;
+  position: relative;
+}
+.s2 .flower-left {
+  position: absolute;
+  top: 20%;
+  left: -60px;
+  width: 200px;
+}
+.s2 .flower-right {
+  position: absolute;
+  top: 60%;
+  right: -30px;
+  width: 200px;
+}
+.s2 .flower-left2 {
+  position: absolute;
+  top: 50%;
+  left: -60px;
+  width: 200px;
+}
+.s2 .flower-right2 {
+  position: absolute;
+  top: 10%;
+  right: -30px;
+  width: 200px;
+}
+.s2 .flower-left3 {
+  position: absolute;
+  top: 90%;
+  left: -60px;
+  width: 200px;
+}
+
+.s3 {
+  background-color: #071B26;
+  position: relative;
+}
+.s3 .flower-left {
+  position: absolute;
+  top: 10%;
+  left: -60px;
+  width: 200px;
+}
+.s3 .flower-right {
+  position: absolute;
+  top: 60%;
+  right: -30px;
+  width: 200px;
+}
+
+.title-section {
+  font-family: "Dancing Script", cursive;
+  background: -webkit-linear-gradient(right, #F8C580, #947243, #F8C580);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.title-section2 {
+  font-family: "Dancing Script", cursive;
+  margin-top: 40px;
+  color: #fff;
+  text-align: center;
+}
+
+.title-wedding {
+  text-align: center;
+  padding: 35% 0;
+  color: #fff;
+}
+.title-wedding h4 {
+  font-family: "Crimson Text", serif;
+  margin: 20px 0;
+}
+.title-wedding .italic {
+  font-style: italic;
+}
+.title-wedding h1 {
+  font-family: "Dancing Script", cursive;
+  margin: 20px 0;
+  font-size: 10vh;
+}
+
+.getting-married {
+  text-align: center;
+}
+.getting-married .name {
+  font-family: "Dancing Script", cursive;
+  margin-top: 24px;
+}
+.getting-married p {
+  font-family: "Crimson Text", serif;
+  font-style: italic;
+}
+.getting-married .and {
+  font-family: "Dancing Script", cursive;
+  background: -webkit-repeating-linear-gradient(#ffd79f, #947243, #F8C580);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 100px;
+}
+
+.date-married {
+  text-align: center;
+}
+.date-married .date {
+  display: flex;
+  margin: auto;
+  font-family: "Crimson Text", serif;
+  font-weight: 900;
+}
+.date-married .date h1 {
+  font-size: 10vh;
+}
+.date-married .date h3 {
+  margin: auto;
+  font-size: 5vh;
+}
+.date-married .date div {
+  width: 5px;
+  height: 5px;
+  background-color: #000;
+  margin: auto;
+}
+.date-married .title {
+  font-family: "Crimson Text", serif;
+  font-size: 3vh;
+  margin-bottom: 20px;
+}
+.date-married .countdown {
+  display: flex;
+  text-align: center;
+  margin-bottom: 100px;
+}
+.date-married .countdown .time {
+  margin: auto;
+}
+.date-married .countdown .time h2 {
+  font-family: "Dancing Script", cursive;
+}
+.date-married .countdown .time span {
+  font-family: "Crimson Text", serif;
+  font-style: italic;
+}
+
+.card-a {
+  color: #fff;
+  background-image: url("/assets/images/bg-card.svg");
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 300px;
+  padding: 85px 78px 75px 95px;
+  text-align: center;
+}
+.card-a img {
+  width: 60px;
+}
+.card-a h1 {
+  font-family: "Dancing Script", cursive;
+}
+.card-a p {
+  font-family: "Crimson Text", serif;
+}
+
+.location {
+  display: flex;
+}
+.location .text-location {
+  text-align: left;
+  margin-left: 30px;
+}
+.location .text-location h3 {
+  font-family: "Crimson Text", serif;
+  font-weight: 800;
+  font-style: italic;
+}
+.location .text-location p {
+  font-family: "Crimson Text", serif;
+  line-height: 40px;
+}
+
+.protokol-kesehatan {
+  margin: 50px 0;
+}
+.protokol-kesehatan p {
+  font-family: "Crimson Text", serif;
+  font-style: italic;
+  font-weight: bold;
+}
+.protokol-kesehatan .protokol {
+  display: flex;
+}
+.protokol-kesehatan .protokol .protokol-ico {
+  width: 150px;
+}
+.protokol-kesehatan .protokol .protokol-ico img {
+  width: 70px;
+  margin: auto;
+}
+
+.wish {
+  padding-top: 100px;
+  background-image: url("/assets/images/bg-form.svg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.wish .form-wish {
+  margin: 30px 0;
+  margin-bottom: 100px;
+  color: #fff;
+  font-family: "Crimson Text", serif;
+}
+.wish .form-wish .form-group {
+  margin-top: 40px;
+}
+.wish .form-wish .form-control {
+  color: #fff;
+  background-color: transparent;
+  border-radius: 0;
+  margin: auto;
+}
+.wish .form-wish .form-control:focus {
+  background-color: transparent;
+}
+.wish .form-wish .form-control::placeholder {
+  color: #fff;
+}
+.wish .form-wish button {
+  color: #fff;
+  background-color: #8eadc4;
+}
+
+/*# sourceMappingURL=style.css.map */

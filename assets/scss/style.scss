@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+$font-dancing: 'Dancing Script', cursive;
+$font-crimson: 'Crimson Text', serif;
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;    
+    overflow-x: hidden;
+}
+.s1{
+    background-image: url('/assets/images/bg-section1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    position: relative; /* needed for footer positioning*/
+    height: auto !important; /* real browsers */
+    min-height: 100%; /* real browsers */
+    .flower-left{
+        position: absolute;
+        top: 20%;
+        left: -60px;        
+        width: 200px;
+    }
+    .flower-right{
+        position: absolute;
+        top: 60%;
+        right: -30px;        
+        width: 200px;
+    }    
+}
+.s2{
+    background-image: url('/assets/images/bg-section2.svg');
+    background-size: cover;
+    background-repeat: repeat-y;    
+    background-position: center;
+    width: 100%;
+    position: relative;
+    .flower-left{
+        position: absolute;
+        top: 20%;
+        left: -60px;        
+        width: 200px;
+    }
+    .flower-right{
+        position: absolute;
+        top: 60%;
+        right: -30px;        
+        width: 200px;
+    }   
+    .flower-left2{
+        position: absolute;
+        top: 50%;
+        left: -60px;        
+        width: 200px;
+    }
+    .flower-right2{
+        position: absolute;
+        top: 10%;
+        right: -30px;        
+        width: 200px;
+    }  
+    .flower-left3{
+        position: absolute;
+        top: 90%;
+        left: -60px;        
+        width: 200px;
+    }
+}
+.s3{
+    background-color: #071B26;
+    position: relative;
+    .flower-left{
+        position: absolute;
+        top: 10%;
+        left: -60px;        
+        width: 200px;
+    }
+    .flower-right{
+        position: absolute;
+        top: 60%;
+        right: -30px;        
+        width: 200px;
+    } 
+}
+
+.title-section{
+    font-family: $font-dancing;
+    background: -webkit-linear-gradient(right,#F8C580, #947243,#F8C580);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 40px;
+    text-align: center;
+}
+.title-section2{
+    font-family: $font-dancing;
+    margin-top: 40px;
+    color: #fff;
+    text-align: center;
+}
+.title-wedding{
+    text-align: center;
+    padding: 35% 0;
+    color: #fff;
+    h4{
+        font-family: $font-crimson;        
+        margin: 20px 0;    
+    }
+    .italic{
+        font-style: italic;
+    }
+    h1{
+        font-family: $font-dancing;
+        margin: 20px 0;
+        font-size: 10vh;
+    }
+    
+}
+.getting-married{
+    text-align: center;    
+    .name{
+        font-family: $font-dancing;
+        margin-top: 24px;
+    }
+    p {
+        font-family: $font-crimson;
+        font-style: italic;
+    }
+    .and{
+        font-family: $font-dancing;
+        background: -webkit-repeating-linear-gradient(#ffd79f, #947243,#F8C580);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 100px;
+    }
+}
+.date-married{
+    text-align: center;
+    .date{
+        display: flex;
+        margin: auto;
+        font-family: $font-crimson;
+        font-weight: 900;
+        h1{
+            font-size: 10vh;
+        }
+        h3{
+            margin: auto;
+            font-size: 5vh;
+        }
+        div{            
+            width: 5px;
+            height: 5px;
+            background-color: #000;            
+            margin: auto;            
+            
+        }
+        
+    }
+    .title{
+        font-family: $font-crimson;
+        font-size: 3vh;
+        margin-bottom: 20px;
+    }
+    .countdown{
+        display: flex;  
+        text-align: center;  
+        margin-bottom: 100px;
+        .time{
+            margin: auto;  
+            h2{
+                font-family: $font-dancing;
+            }    
+            span{
+                font-family: $font-crimson;
+                font-style: italic;
+            }  
+        }
+    }
+    
+}
+
+.card-a{
+    color: #fff;
+    background-image: url('/assets/images/bg-card.svg');
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 300px;
+    padding: 85px 78px 75px 95px;
+    text-align: center;
+    img{
+        width: 60px;
+    }
+    h1{
+        font-family: $font-dancing;
+    }
+    p{
+        font-family: $font-crimson;
+    }    
+}
+.location{
+    display: flex;
+    
+    .text-location{
+        text-align: left;
+        margin-left: 30px;
+        h3{
+            font-family: $font-crimson;
+            font-weight: 800;
+            font-style: italic;
+        }
+        p{
+            font-family: $font-crimson;
+            line-height: 40px;
+        }
+    }
+}
+
+.protokol-kesehatan{
+    margin: 50px 0;
+    p{
+        font-family: $font-crimson;
+        font-style: italic;
+        font-weight: bold;
+    }
+    .protokol{
+        display: flex;
+        .protokol-ico{
+            width: 150px;
+            img{
+                width: 70px;
+                margin: auto;
+            }
+        }
+    }
+}
+.wish{    
+    padding-top: 100px;
+    background-image: url('/assets/images/bg-form.svg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .form-wish{        
+        margin: 30px 0;
+        margin-bottom: 100px;
+        color: #fff;
+        font-family: $font-crimson;
+        .form-group{        
+            margin-top: 40px;
+            // margin: auto;
+        }
+        .form-control{
+            color: #fff;
+            background-color: transparent;
+            border-radius: 0;
+            margin: auto;
+        }
+        .form-control:focus{
+            background-color: transparent;
+        }
+        .form-control::placeholder{
+            color: #fff;
+        }
+        button{
+            // margin-top: 40px;
+            color: #fff;
+            background-color: #8eadc4;
+            
+        }
+    }    
+}
+
+
+
+
