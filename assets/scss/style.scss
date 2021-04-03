@@ -22,12 +22,20 @@ html, body{
         top: 20%;
         left: -60px;        
         width: 200px;
+        @media (max-width: 575.98px) {
+            width: 150px;
+            left: -50px;     
+        }
     }
     .flower-right{
         position: absolute;
         top: 60%;
         right: -30px;        
         width: 200px;
+        @media (max-width: 575.98px) {
+            width: 150px;
+            top: 70%;
+        }
     }    
 }
 .s2{
@@ -42,30 +50,48 @@ html, body{
         top: 20%;
         left: -60px;        
         width: 200px;
+        @media (max-width: 575.98px) {
+            // width: 180px;
+        }
     }
     .flower-right{
         position: absolute;
         top: 60%;
         right: -30px;        
         width: 200px;
+        @media (max-width: 575.98px) {
+            right: -10px;       
+            width: 150px;
+        }
     }   
     .flower-left2{
         position: absolute;
         top: 50%;
         left: -60px;        
         width: 200px;
+        @media (max-width: 575.98px) {
+            left: -40px;         
+            width: 150px;
+        }
     }
     .flower-right2{
         position: absolute;
         top: 10%;
         right: -30px;        
         width: 200px;
+        @media (max-width: 575.98px) {
+            right: -20px;       
+            width: 150px;
+        }
     }  
     .flower-left3{
         position: absolute;
         top: 90%;
         left: -60px;        
         width: 200px;
+        @media (max-width: 575.98px) {
+            display: none;
+        }
     }
 }
 .s3{
@@ -84,6 +110,53 @@ html, body{
         width: 200px;
     } 
 }
+.modal{
+    background-image: url('/wedding-invitation/assets/images/bg-popup.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;    
+}
+.modal-content{
+    background-color: transparent !important;
+    border: 0 !important;   
+    padding: 0 35%; 
+    @media (max-width: 575.98px) {
+        padding: 0% 18%;  
+    }
+    .modal-body{
+        color: #fff;  
+        margin-top: 35px; 
+        @media (max-width: 575.98px) {
+            margin-top: 70px; 
+        }       
+        h3{
+            font-family: $font-crimson;                          
+        }
+        h4{
+            font-family: $font-crimson;        
+            color: #fff;
+            text-align: center;     
+        }
+        h5{
+            font-family: $font-crimson;     
+            color: #fff;     
+        }
+        p{
+            font-family: $font-crimson;
+            margin: 30px 0 10px 0;
+            text-align: center;     
+        }
+        button{
+            background-color: #947243;
+            color: #fff;            
+        }
+        .center{
+            text-align: center;
+        }
+        
+    }
+}
+
 
 .title-section{
     font-family: $font-dancing;
@@ -198,6 +271,10 @@ html, body{
     p{
         font-family: $font-crimson;
     }    
+    .left{
+        margin-left: auto;
+        margin-right: 0;
+    }
 }
 .location{
     display: flex;
@@ -230,6 +307,14 @@ html, body{
             width: 150px;
             img{
                 width: 70px;
+                margin: auto;
+            }
+            
+        }
+        @media (max-width: 575.98px) {
+            display: block;
+            .protokol-ico{
+                width: 60%;
                 margin: auto;
             }
         }
@@ -266,6 +351,11 @@ html, body{
             // margin-top: 40px;
             color: #fff;
             background-color: #8eadc4;
+            
+        }
+        .angpao{
+            color: #fff;
+            background-color: #947243;
             
         }
     }    

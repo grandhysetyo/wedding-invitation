@@ -7,14 +7,19 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <title>Document</title>
+    
+    <title>Usy & Yongky</title>
 </head>
 <body>
+    <audio autoplay id="audio">        
+        <source src="assets/audio/all_of_me.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+      </audio>
     <section class="s1">
         <img src="assets/images/flower-left.svg" class="flower-left" alt="flowers-right">
         <img src="assets/images/flower-right.svg" class="flower-right" alt="flowers-right">
         <div class="container">
-            <div class="title-wedding">
+            <div class="title-wedding animate__animated animate__bounce">
                 
                 <div class="row">
                     <div class="col-lg-3 mx-auto">
@@ -28,18 +33,18 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-3 mx-auto">
-                        <h4>Thrusday, 9 April 2021</h4>
+                        <h4>Thursday, 08 April 2021</h4>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-lg-3 mx-auto">
-                        <h4 class="italic">We invite you to celebrate our unforgattable moment</h4>
+                        <h4 class="italic">I have found the one that my soul loves</h4>
                     </div>
                 </div>
             </div>
         </div>
     </section>  
-    <section class="s2">
+    <section class="s2" >
         <img src="assets/images/flower2-left.svg" class="flower-left" alt="flowers-right">
         <img src="assets/images/flower2-right.svg" class="flower-right" alt="flowers-right">
         
@@ -49,7 +54,7 @@
         <img src="assets/images/flower2-left.svg" class="flower-left3" alt="flowers-right">
         <div class="container">
             <!-- Mempelai -->
-            <div class="getting-married pt-5">
+            <div class="getting-married pt-5 animate__animated animate__bounce">
                 <div class="row">
                     <div class="col-lg-5 mx-auto">
                         <h1 class="title-section">We are getting married</h1>    
@@ -68,12 +73,12 @@
                     <div class="col-lg-5 mx-auto">
                         <img src="assets/images/yongky.svg" width="50%">
                         <h3 class="name">Yongky Purnomo, S.T</h3>
-                        <p>Putri Pertama dari Pasangan Bapak Hadi & Ibu Dwi</p>
+                        <p>Putra Pertama dari Pasangan Bapak Edy (alm) & Ibu Hartini</p>
                     </div>
                 </div>
             </div>
             <!-- DATE -->
-            <div class="date-married">
+            <div class="date-married" >
                 <div class="row">
                     <div class="col-lg-5 mx-auto">
                         <h2 class="title-section">Our Special Date</h2>   
@@ -117,14 +122,14 @@
                 <!-- AKAD RESEPSI -->                
                 <div class="row">
                     <div class="col-lg-6">                        
-                        <div class="card-a ml-auto">
+                        <div class="card-a mx-auto">
                             <img src="assets/images/icon-5.svg" alt="">
                             <h1>Akad</h1>
                             <p>Pukul 09.00 WIB</p>
                         </div>                                                                                                                      
                     </div>   
                     <div class="col-lg-6">                                                 
-                        <div class="card-a mr-auto">
+                        <div class="card-a mx-auto">
                             <img src="assets/images/icon-6.svg" alt="">
                             <h1>Resepsi</h1>
                             <p>Pukul 09.00 WIB</p>
@@ -208,7 +213,7 @@
                             <div class="form-group">                            
                                 <textarea class="form-control" name="ucapan" rows="3" placeholder="Ucapan"></textarea>
                             </div>
-                            <div class="form-check form-check-inline">
+                            <!-- <div class="form-check form-check-inline">
                                 <input class="form-check-input" type="radio" name="kehadiran" id="exampleRadios1" value="Hadir" >
                                 <label class="form-check-label" for="exampleRadios1">
                                   Hadir
@@ -219,59 +224,104 @@
                                 <label class="form-check-label" for="exampleRadios1">
                                   Berhalangan
                                 </label>
-                            </div>
+                            </div> -->
                             <div class="form-group">
                                 <button type="submit" class="btn btn-block">Kirim</button>
-                            </div>                        
-                        </form>
+                            </div> 
+                            <a class="btn btn-block angpao" data-toggle="modal" data-target="#modal-angpao">Kirim Angpao</a>                  
+                        </form>                        
+                                               
                     </div>                
                 </div>
             </div>                        
             
         </div>
     </section>
+    <div class="modal" tabindex="-1" id="modal">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">            
+            <div class="modal-body">
+              <h5>Hai..</h5>
+              <div class="center">
+                <h4 id="nama_undangan">Nama Undangan</h4>
+                <p>Kami ingin berbagi kabar bahagia</p>
+                <button class="btn btn-sm" data-dismiss="modal">Buka</button>
+              </div>
+              
+            </div>            
+          </div>
+        </div>
+      </div>
+      <div class="modal" tabindex="-1" id="modal-angpao">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">            
+            <div class="modal-body text-center">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                <img src="assets/images/Angpau.png" alt="" width="50%">
+                <h5>No Rekening</h5>
+                
+                <p>BNI: 0802737475 a.n <br> Yongky Purnomo</p>
+                <!-- <img src="assets/images/bni.png" alt="bni" width="100px"> -->
+            </div>
+            <!-- <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>              
+            </div> -->
+          </div>
+        </div>
+      </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-    <script>
+
+    
+    <script>        
         // Set the date we're counting down to
         var countDownDate = new Date("Apr 8, 2021 09:00:00").getTime();
         
         // Update the count down every 1 second
         var x = setInterval(function() {
         
-          // Get today's date and time
-          var now = new Date().getTime();
-            
-          // Find the distance between now and the count down date
-          var distance = countDownDate - now;
-            
-          // Time calculations for days, hours, minutes and seconds
-          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-            
-          // Output the result in an element with id="demo"
-          document.getElementById("days").innerHTML = days;
-          document.getElementById("hours").innerHTML = hours;
-          document.getElementById("minutes").innerHTML = minutes;
-          document.getElementById("seconds").innerHTML = days;
-            
-          // If the count down is over, write some text 
-          if (distance < 0) {
-            clearInterval(x);
-            document.getElementById("demo").innerHTML = "EXPIRED";
-          }
-        }, 1000);
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbzxXzOLrISRFpzUU8hS8fVdHFN_ZTT_gYgO7mi-jq_tTAPofu8-EFRzD-8FsWDGdrjp/exec'
-        const form = document.forms['google-sheet']
-      
-        form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => alert("Terimakasih:)"))
-            .catch(error => console.error('Error!', error.message))
-        })
-    </script>    
+        // Get today's date and time
+        var now = new Date().getTime();
+        
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+        
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+        // Output the result in an element with id="demo"
+        document.getElementById("days").innerHTML = days;
+        document.getElementById("hours").innerHTML = hours;
+        document.getElementById("minutes").innerHTML = minutes;
+        document.getElementById("seconds").innerHTML = days;
+        
+        // If the count down is over, write some text 
+        if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+    }, 1000);
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzxXzOLrISRFpzUU8hS8fVdHFN_ZTT_gYgO7mi-jq_tTAPofu8-EFRzD-8FsWDGdrjp/exec'
+    const form = document.forms['google-sheet']
+    
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => alert("Terimakasih:)"))
+        .catch(error => console.error('Error!', error.message))
+    })
+    $(window).on('load', function() {
+        $('#modal').modal('show');
+    });
+    var audio = document.getElementById("audio");
+    audio.volume = 0.2;
+
+    var urlParams = new URLSearchParams(window.location.search);
+    var myParam = urlParams.get('to');
+    document.getElementById("nama_undangan").innerHTML = myParam;
+</script>    
 </body>
 </html>

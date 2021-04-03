@@ -25,11 +25,23 @@ html, body {
   left: -60px;
   width: 200px;
 }
+@media (max-width: 575.98px) {
+  .s1 .flower-left {
+    width: 150px;
+    left: -50px;
+  }
+}
 .s1 .flower-right {
   position: absolute;
   top: 60%;
   right: -30px;
   width: 200px;
+}
+@media (max-width: 575.98px) {
+  .s1 .flower-right {
+    width: 150px;
+    top: 70%;
+  }
 }
 
 .s2 {
@@ -52,11 +64,23 @@ html, body {
   right: -30px;
   width: 200px;
 }
+@media (max-width: 575.98px) {
+  .s2 .flower-right {
+    right: -10px;
+    width: 150px;
+  }
+}
 .s2 .flower-left2 {
   position: absolute;
   top: 50%;
   left: -60px;
   width: 200px;
+}
+@media (max-width: 575.98px) {
+  .s2 .flower-left2 {
+    left: -40px;
+    width: 150px;
+  }
 }
 .s2 .flower-right2 {
   position: absolute;
@@ -64,11 +88,22 @@ html, body {
   right: -30px;
   width: 200px;
 }
+@media (max-width: 575.98px) {
+  .s2 .flower-right2 {
+    right: -20px;
+    width: 150px;
+  }
+}
 .s2 .flower-left3 {
   position: absolute;
   top: 90%;
   left: -60px;
   width: 200px;
+}
+@media (max-width: 575.98px) {
+  .s2 .flower-left3 {
+    display: none;
+  }
 }
 
 .s3 {
@@ -86,6 +121,57 @@ html, body {
   top: 60%;
   right: -30px;
   width: 200px;
+}
+
+.modal {
+  background-image: url("/wedding-invitation/assets/images/bg-popup.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.modal-content {
+  background-color: transparent !important;
+  border: 0 !important;
+  padding: 0 35%;
+}
+@media (max-width: 575.98px) {
+  .modal-content {
+    padding: 0% 18%;
+  }
+}
+.modal-content .modal-body {
+  color: #fff;
+  margin-top: 35px;
+}
+@media (max-width: 575.98px) {
+  .modal-content .modal-body {
+    margin-top: 70px;
+  }
+}
+.modal-content .modal-body h3 {
+  font-family: "Crimson Text", serif;
+}
+.modal-content .modal-body h4 {
+  font-family: "Crimson Text", serif;
+  color: #fff;
+  text-align: center;
+}
+.modal-content .modal-body h5 {
+  font-family: "Crimson Text", serif;
+  color: #fff;
+}
+.modal-content .modal-body p {
+  font-family: "Crimson Text", serif;
+  margin: 30px 0 10px 0;
+  text-align: center;
+}
+.modal-content .modal-body button {
+  background-color: #947243;
+  color: #fff;
+}
+.modal-content .modal-body .center {
+  text-align: center;
 }
 
 .title-section {
@@ -202,6 +288,10 @@ html, body {
 .card-a p {
   font-family: "Crimson Text", serif;
 }
+.card-a .left {
+  margin-left: auto;
+  margin-right: 0;
+}
 
 .location {
   display: flex;
@@ -238,6 +328,15 @@ html, body {
   width: 70px;
   margin: auto;
 }
+@media (max-width: 575.98px) {
+  .protokol-kesehatan .protokol {
+    display: block;
+  }
+  .protokol-kesehatan .protokol .protokol-ico {
+    width: 60%;
+    margin: auto;
+  }
+}
 
 .wish {
   padding-top: 100px;
@@ -270,6 +369,10 @@ html, body {
 .wish .form-wish button {
   color: #fff;
   background-color: #8eadc4;
+}
+.wish .form-wish .angpao {
+  color: #fff;
+  background-color: #947243;
 }
 
 /*# sourceMappingURL=style.css.map */
